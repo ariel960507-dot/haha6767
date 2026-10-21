@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台中驛鐵道園區深度報導 - 百年鐵道新生的綠色與文化走廊</title>
+    <meta name="description" content="深度介紹台中驛鐵道園區的歷史背景、核心景點、交通參觀指南，以及綠空鐵道與舊台中車站的風華再現。">
+    <meta name="author" content="T123456 王小明">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph 分享資訊設定 -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:title" content="台中驛鐵道園區深度報導 - 百年鐵道新生的綠色與文化走廊">
+    <meta property="og:description" content="從舊台中車站出發，探索歷史建築與現代休閒交織的城市綠洲。">
+    <meta property="og:image" content="https://placehold.co/1200x630/8B4513/FFFFFF?text=Taichung+Railway+Park">
+    <meta property="og:image:alt" content="台中舊車站外觀與廣場示意圖">
+
+    <!-- Google Fonts & Tailwind CSS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 1. 全域與 Body 基本設定 */
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Serif TC', sans-serif;
+            line-height: 1.8;
+            color: #1e293b;
+            background-color: #f8fafc;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Noto Serif TC', serif;
+            color: #0f172a;
+        }
+
+        /* 2. 頁首、導覽、章節、補充資訊及頁尾的留白、背景與框線 */
+        header {
+            background: linear-gradient(135deg, #3d1e08 0%, #552a0b 50%, #8b4513 100%);
+            color: #ffffff;
+            padding: 3rem 2rem;
+            margin-top: 2rem;
+            border-radius: 1rem 1rem 0 0;
+            text-align: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 1.25rem;
+            border: 1px solid #e2e8f0;
+            border-top: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #64748b;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover, nav a:focus {
+            color: #8b4513;
+            background-color: #fbeee9;
+        }
+
+        main {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-left: 1px solid #e2e8f0;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        aside {
+            background-color: #fffbeb;
+            border: 1px solid #fde68a;
+            padding: 2rem;
+            border-radius: 1rem;
+            margin: 2rem 0;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 2.5rem;
+            border-radius: 0 0 1rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        footer a {
+            color: #f8fafc;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover, footer a:focus {
+            text-decoration: underline;
+        }
+
+        /* 3. 標題、段落、清單、表格及圖說樣式，將舊式 border 屬性改為 CSS */
+        h2 {
+            font-size: 1.75rem;
+            border-left: 4px solid #8b4513;
+            padding-left: 0.75rem;
+            margin-bottom: 1.25rem;
+            margin-top: 2rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            border: 1px solid #cbd5e1; /* 以 CSS 替代舊式 border="1" */
+        }
+
+        th, td {
+            padding: 0.875rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        th {
+            background-color: #552a0b;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        figure {
+            margin: 1.5rem 0;
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            text-align: center;
+        }
+
+        figcaption {
+            margin-top: 0.75rem;
+            font-size: 0.875rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #e2e8f0;
+            margin: 2rem 0;
+        }
+
+        /* 4. 用 class 區分影片與地圖樣式，調整圖片、影片、地圖寬度 */
+        .responsive-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 0.5rem;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .media-video {
+            width: 100%;
+            max-width: 700px;
+            aspect-ratio: 16 / 9;
+            height: auto;
+            border-radius: 0.75rem;
+            border: 1px solid #cbd5e1;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .media-map {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            border-radius: 0.75rem;
+            border: 1px solid #cbd5e1;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* 焦點提示樣式 (支援 Tab 鍵導覽) */
+        a:focus-visible, button:focus-visible {
+            outline: 3px solid #f59e0b;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <!-- ========================================== -->
+    <!-- 1. header 元素：頁首區塊                   -->
+    <!-- 用途：包含報導主標題、副標、作者與發布日期   -->
+    <!-- ========================================== -->
+    <header>
+        <!-- 5. 加入行內 style：強調頁首主標題的視覺層次與字體間距 -->
+        <h1 style="letter-spacing: 0.05em; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">台中驛鐵道園區：百年鐵道新生的綠色與文化走廊</h1>
+        <p>從舊台中車站出發，探索歷史建築與現代休閒交織的城市綠洲。</p>
+        <p>
+            <small>作者：張儷馨 | 發布日期：<time datetime="2026-10-21">2026年10月21日</time></small>
+        </p>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- 2. nav 元素：導航連結區塊                  -->
+    <!-- 用途：提供頁內目錄，連結各個主要章節與補充提醒 -->
+    <!-- ========================================== -->
+    <nav>
+        <h2>目錄</h2>
+        <ul>
+            <li><a href="#introduction">一、園區簡介與歷史背景</a></li>
+            <li><a href="#features">二、核心景點與特色</a></li>
+            <li><a href="#activities">三、推薦遊程與漫步規劃</a></li>
+            <li><a href="#info-table">四、園區基本資訊與參觀指南</a></li>
+            <li><a href="#media-section">五、影音導覽與實景照片</a></li>
+            <li><a href="#map-section">六、交通與地理位置地圖</a></li>
+            <li><a href="#aside-notice">七、走讀補充提醒</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <!-- ========================================== -->
+    <!-- 3. main 元素：主要區塊                     -->
+    <!-- 用途：包覆整頁的主要內容，全頁僅有一個       -->
+    <!-- ========================================== -->
+    <main>
+        <!-- ========================================== -->
+        <!-- 4. article 元素：文章區塊                  -->
+        <!-- 用途：包覆可獨立閱讀的完整鐵道報導           -->
+        <!-- ========================================== -->
+        <article>
+            
+            <!-- ========================================== -->
+            <!-- 5. section 元素：章節區塊（園區簡介）      -->
+            <!-- ========================================== -->
+            <section id="introduction">
+                <h2>一、園區簡介與歷史背景</h2>
+                <p>
+                    <strong>台中驛鐵道園區</strong>（Taichung Railway Park）位於台中市中區，
+                    是以國定古蹟「台中車站」舊站（第二代車站）為核心所延伸規劃的文化景觀廊帶。
+                    隨著台中鐵路高架化工程完工，地面上的舊鐵道空間轉型為綠空鐵道軸線，
+                    不僅保留了日治時期文藝復興風格的紅磚紅瓦車站主體，更串聯起新站商圈與舊城區的記憶。
+                </p>
+                <p>
+                    這裡見證了台中百年來的交通樞紐變遷，如今結合了文創市集、展覽空間以及公共藝術，
+                    成為市民漫步、遊客探訪台中歷史風華的重要地標。<mark>漫步其中，新舊交融的建築美學令人流連忘返。</mark>
+                </p>
+                <p>
+                    從日治時期的縱貫線鐵路通車，到近代鐵路高架化帶來的都市縫合，台中驛鐵道園區不僅是一個休憩綠地，
+                    更是一部活生生的台灣鐵道發展史書，承載著在地居民的共同情感與城市發展足跡。
+                </p>
+            </section>
+            <hr>
+
+            <!-- ========================================== -->
+            <!-- section 元素：章節區塊（核心特色）         -->
+            <!-- ========================================== -->
+            <section id="features">
+                <h2>二、核心景點與特色</h2>
+                <p>園區內有多處不容錯過的打卡與參觀亮點，主要包含以下幾個部分：</p>
+                <!-- 無序清單：至少三項 -->
+                <ul>
+                    <li>
+                        <strong>國定古蹟舊台中車站：</strong>
+                        保有精緻的辰野式紅磚白帶建築風格，中央高聳的鐘塔與穹頂為其最大特色。
+                    </li>
+                    <li>
+                        <strong>台中20號倉庫群：</strong>
+                        早期台鐵的倉庫群，現已轉型為藝術家進駐與展覽的藝文基地。
+                    </li>
+                    <li>
+                        <strong>綠空鐵道軸線：</strong>
+                        利用高架化後騰空的舊鐵道地面，打造全長約 1.6 公里的人行與單車綠廊，重現歷史軌跡。
+                    </li>
+                    <li>
+                        <strong>退役火車車廂展示：</strong>
+                        現場展示多款經典的退役老火車與煤水車，供鐵道迷近距離合影留念。
+                    </li>
+                </ul>
+            </section>
+            <hr>
+
+            <!-- ========================================== -->
+            <!-- section 元素：章節區塊（推薦遊程）         -->
+            <!-- ========================================== -->
+            <section id="activities">
+                <h2>三、推薦遊程與漫步規劃</h2>
+                <p>若您計畫造訪園區，建議可以依照以下步驟進行半日深度漫步：</p>
+                <!-- 有序清單：至少三項 -->
+                <ol>
+                    <li>先至舊台中車站大廳欣賞百年建築細節與歷史常設展，拍照留念。</li>
+                    <li>沿著綠空鐵道軸線漫步向南，觀察高架化鐵道下方的舊軌跡與綠美化植栽。</li>
+                    <li>參訪台中 20 號倉庫群，欣賞當期進駐藝術家的文創作品或手作市集。</li>
+                    <li>至戶外展區參觀退役火車車廂，並於周邊特色咖啡館享用下午茶。</li>
+                </ol>
+            </section>
+            <hr>
+
+            <!-- ========================================== -->
+            <!-- section 元素：章節區塊（表格資訊）         -->
+            <!-- ========================================== -->
+            <section id="info-table">
+                <h2>四、園區基本資訊與參觀指南</h2>
+                <p>計畫前往參觀的讀者可參考以下實用資訊：</p>
+                <!-- 有框表格：已改由 CSS 控制邊框，移除舊式 border="1" -->
+                <table>
+                    <caption>台中驛鐵道園區參觀資訊表</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">項目</th>
+                            <th scope="col">詳細內容</th>
+                            <th scope="col">備註說明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">開放時間</th>
+                            <td>戶外園區全天開放；室內展館通常為 10:00 - 18:00</td>
+                            <td>周一固定休館</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">門票費用</th>
+                            <td>戶外空間免費參觀</td>
+                            <td>部分特展依現場實際公告為準</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">交通方式</th>
+                            <td>搭乘台鐵或市區公車至「台中車站」下車即達</td>
+                            <td>交通樞紐，班次頻繁便利</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+
+            <!-- ========================================== -->
+            <!-- section 元素：章節區塊（影音與照片）       -->
+            <!-- ========================================== -->
+            <section id="media-section">
+                <h2>五、影音導覽與實景照片</h2>
+                
+                <section>
+                    <h3>現場風光</h3>
+                    <p>漫步於舊鐵道與古蹟建築之間，感受新舊交融的城市魅力：</p>
+                    <figure>
+                        <!-- 套用響應式圖片類別 -->
+                        <img src="https://www.tcrp.com.tw/storage/upload/admin.html-editor/image/2022-09-23/4MBSTknDA8Z22iEVehMsILHMIUdfJlhMgjsLChVK.jpeg" 
+                             alt="台中舊車站外觀與廣場示意圖，紅磚白帶建築風格" 
+                             class="responsive-img"
+                             loading="lazy">
+                        <figcaption>圖一：充滿歷史感的台中舊車站建築外觀。（圖片來源：台中驛鐵道園區）</figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <h3>影音介紹</h3>
+                    <p>透過以下影片更深入了解台中鐵道文化與周邊景點：</p>
+                    <!-- 套用影片專屬 class 與適當尺寸 -->
+                    <iframe class="media-video"
+                            src="https://share.google/nD0lz2XB40oFE0GsU" 
+                            title="台中驛鐵道園區介紹影片" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            loading="lazy">
+                    </iframe>
+                    <p style="text-align: center; margin-top: 0.75rem;">
+                        若無法正常播放，請直接開啟 <a href="https://share.google/nD0lz2XB40oFE0GsU" target="_blank" rel="noopener">YouTube 原始影片連結</a>。
+                    </p>
+                </section>
+            </section>
+            <hr>
+
+            <!-- ========================================== -->
+            <!-- section 元素：章節區塊（Google 地圖）      -->
+            <!-- ========================================== -->
+            <section id="map-section">
+                <h2>六、交通與地理位置地圖</h2>
+                <p>台中驛鐵道園區位於台中市中區台灣大道一段與建國路口旁，交通十分便利：</p>
+                <p><strong>地址：</strong>400 台中市中區台灣大道一段1號</p>
+                
+                <!-- 套用地圖專屬 class -->
+                <iframe class="media-map"
+                        src="https://maps.google.com/maps?q=24.1368,120.6850&amp;z=16&amp;output=embed" 
+                        title="台中驛鐵道園區地理位置地圖" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <p style="text-align: center; margin-top: 0.75rem;">
+                    若地圖載入異常，請至 <a href="https://maps.google.com/?q=24.1368,120.6850" target="_blank" rel="noopener">Google 地圖檢視完整位置</a>。
+                </p>
+            </section>
+
+        </article>
+    </main>
+    <hr>
+
+    <!-- ========================================== -->
+    <!-- 6. aside 元素：補充區塊                    -->
+    <!-- 用途：與報導相關的走讀補充提醒，可從主文省略 -->
+    <!-- ========================================== -->
+    <aside id="aside-notice">
+        <!-- 5. 加入行內 style：強調補充提醒標題的警示色與醒目度 -->
+        <h3 style="color: #92400e; margin-top: 0;">走讀補充提醒</h3>
+        <p>
+            參訪鐵道園區時，因戶外開放空間腹地較廣且多為露天步道，建議參觀讀者務必做好防曬與補充水分。
+            若攜帶小朋友同行，請隨時留意鐵道周邊與自行車道安全。
+        </p>
+        <p><small style="color: #78350f;">資料參考來源：交通部觀光署、國家文化資產網、台中市政府文化局。</small></p>
+    </aside>
+    <hr>
+
+    <!-- ========================================== -->
+    <!-- 8. footer 元素：頁尾區塊                   -->
+    <!-- 用途：作品資訊、版權宣告與回到頁首連結       -->
+    <!-- ========================================== -->
+    <footer>
+        <p>&copy; 2026 台中驛鐵道園區專題報導. 作者：張儷馨</p>
+        <!-- 5. 加入行內 style：讓回到頁首連結呈現出精緻的按鈕感與良好點擊體驗 -->
+        <p style="margin-top: 1rem;"><a href="#top" style="background-color: #334155; padding: 0.5rem 1.25rem; border-radius: 9999px; display: inline-block; transition: background-color 0.2s;">回到頁首</a></p>
+    </footer>
+
+</body>
+</html>
